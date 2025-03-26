@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
 import { useParams } from "react-router-dom";
+import images from "../constant/images";
 
 
 /**
@@ -64,16 +65,20 @@ const BooksDetail = () => {
 
             {/* Star Ratings */}
             <div className="flex items-center mt-2">
-              {Array.from({ length: 5 }, (_, i) => (
-                <span
-                  key={i}
-                  className={`text-yellow-500 text-lg sm:text-xl ${
-                    i < book.rating ? "text-yellow-500" : "text-gray-300"
-                  }`}
-                >
-                  ★
-                </span>
-              ))}
+              {Array.from({ length: 5 }, (_, i) => {
+                const ratingValue = book.rating;
+                return (
+                  <span key={i} className="text-lg sm:text-xl">
+                    {i + 1 <= ratingValue ? (
+                      <span className="text-yellow-500"><img className="w-[20px] h-[20px]" src={images.starfullIcon} alt="" /></span>
+                    ) : i + 0.5 < ratingValue ? (
+                      <span className="text-yellow-500"><img className="w-[20px] h-[20px]" src={images.starhalfIcon} alt="" /></span>
+                    ) : (
+                      <span className="text-gray-300"><img className="w-[20px] h-[20px]" src={images.starfullIcon} alt="" /></span>
+                    )}
+                  </span>
+                );
+              })}
             </div>
 
             {/* Description */}

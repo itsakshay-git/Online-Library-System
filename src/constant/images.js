@@ -7,6 +7,8 @@ import leftIcon from '../assets/icons/Left Arrow.png';
 import rightIcon from '../assets/icons/Right Arrow.png';
 import menuIcon from '../assets/icons/Menu.png';
 import closeIcon from '../assets/icons/Multiply.png';
+import starfullIcon from '../assets/icons/Hand Drawn Star.png';
+import starhalfIcon from '../assets/icons/Star Half Empty.png';
 
 
 // images
@@ -57,6 +59,8 @@ export default {
   rightIcon,
   menuIcon,
   closeIcon,
+  starfullIcon,
+  starhalfIcon,
 
   the1984,
   dune,
