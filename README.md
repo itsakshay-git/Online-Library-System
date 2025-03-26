@@ -72,12 +72,6 @@ src/
    ```
 5. Open `http://localhost:3000` in your browser.
 
-## Future Enhancements
-
-- Add book to favorites feature
-- User authentication for personalized experience
-- PDF and audio preview functionality
-
 ## Contributors
 
 - **Akshay Dhongade** - Developer
