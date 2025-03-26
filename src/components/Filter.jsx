@@ -28,7 +28,7 @@ const Filter = () => {
         alert("Please enter a search term.");
         return;
       }
-      navigate(`/books/${category.toLowerCase()}?query=${search}`);
+      navigate(`/books/${category}?query=${search}`);
     };
   
 
