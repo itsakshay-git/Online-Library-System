@@ -56,7 +56,7 @@ src/
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone [https://github.com/your-repo.git](https://github.com/itsakshay-git/Online-Library-System)
    ```
 2. Navigate to the project folder:
    ```sh
