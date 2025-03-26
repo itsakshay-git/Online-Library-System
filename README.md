@@ -82,6 +82,3 @@ src/
 
 - **Akshay Dhongade** - Developer
 
-## License
-
-This project is licensed under the MIT License.
